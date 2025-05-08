@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MyShop</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a herf="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button class="chatbot-toggler">
+        <img src="Screenshot 2025-05-08 093646.png" alt="Q-Bot Logo"/>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Q-Bot</h2>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span> 
+                    <img src="Screenshot 2025-05-08 093646.png"alt="Q-Bot Logo"/>
+                </span>
+                <p>Radhe Radhe🙏. How may I help you?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." required></textarea>
+            <span class="material-icons">send</span>
+        </div> 
+    </div>
+
+    <main>
+        <h1>Our Products</h1>
+        <div class="product-filters">
+            <input type="text" id="search" placeholder="Search products...">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="home">Home</option>
+            </select>
+        </div>
+        <div class="products">
+            <!-- Products will be added by JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MyShop - College Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <script src="scriptchat.js"></script>
+</body>
+</html>
